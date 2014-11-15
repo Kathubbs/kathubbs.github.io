@@ -1,4 +1,6 @@
-.bundle/
+_site
+.sass-cache
 
+.bundle/
 vendor/ruby
 vendor/cache
