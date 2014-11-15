@@ -1,0 +1,540 @@
+*{
+	box-sizing:border-box;
+}
+
+@font-face {
+	font-family: 'alphamals';
+	src: url('/fonts/alphamals.ttf');
+}
+
+@font-face {
+	font-family: 'alphashapes';
+	src: url('/fonts/alphashapes.ttf');
+}
+
+body{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	max-width: 800px;
+	color: gray;
+	margin: 0 auto;
+	padding-bottom: 50px;
+
+}
+
+h1{
+	font-weight: 400;
+	font-size: 2.75em;
+	float: left;
+}
+
+.socialnav ul{
+	float:right;
+}
+.socialnav li{
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.socialnav a{
+	color: gray;
+	text-decoration: none;
+	padding-right: 10px;
+	font-size: 2em;
+
+}
+.socialnav a:hover{
+	color: #F2A3C4;
+	text-decoration: none;
+	padding-right: 10px;
+	font-size: 2em;
+
+}
+.header{
+	background: white;
+	max-width: 100%;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.clearfix:after{ /* force element to contain floated children */
+	content: '';
+	display:table;
+	clear:both;
+}
+
+.sitenav{
+	max-width: 100%;
+}
+.sitenav li {
+	display: inline-block;
+	background: white;
+	float: left;
+	border-bottom: 3px solid gray;
+	width: 25%;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.sitenav a{
+	display: block;
+	font-size: 1.25em;
+	color: gray;
+	text-decoration: none;
+}
+
+.sitenav li:hover {
+	background: gray;
+}
+
+.sitenav li:hover a{
+	color:white;
+}
+
+.sitenav ul li:active {
+	background: #F2A3C4;
+}
+
+.sitenav a:active {
+	font-weight: 700;
+}
+
+li.selected {
+	background: #F2A3C4;
+	color: white;
+	font-weight: 700;
+}
+
+.selected a{
+	color: white;
+	
+}
+
+article.about{
+	display:none;
+	max-width: 100%;
+}
+
+article.portfolio {
+	display:none;
+	max-width: 100%;
+}
+
+.portdisplay {
+	margin: auto;
+	padding: 20px;
+}
+/*
+.portexpanded{
+	display: block;
+	margin: 0 auto;
+	padding: 20px;
+	width: 100%;
+	height: 350px;
+	border-bottom: 3px solid gray;
+}
+
+.portexpinfo {
+	font-size: 1.25em;
+	color: grey;
+	width: 50%;
+	text-align: center;
+	float: right;
+	padding: 20px;
+}
+
+.portexpimg{
+	background-color: grey;
+	display: inline-block;
+	width: 50%;
+	height: 300px;
+}*/
+
+.port-grid {
+	margin: auto;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  
+  	-webkit-flex-flow: row wrap;
+  	justify-content: space-around;
+}
+
+.port-grid:after,
+.port-item:before {
+	content: ' ';
+	display: table;
+}
+
+.port-grid:after {
+	clear: both;
+}
+
+.port-grid li {
+	width: 25%;
+	height: 25%;
+	display: inline-block;
+	margin: auto;
+	padding: 0;
+}
+
+.port-item {
+	width: 170px;
+	height: 170px;
+	margin: 10px;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+	0 1px 2px rgba(0, 0, 0, 0.1);
+	transition: all 0.4s ease-in-out;
+}
+
+.port-img1 {
+	background-image: url(/images/THUMBNAIL_Test_hubbs14.jpg);
+}
+.port-img2 {
+	background-image: url(/images/THUMBNAIL_Test_hubbs17.jpg);
+}
+.port-img3 {
+	background-image: url(/images/THUMBNAIL_Test_hubbs22.jpg);
+}
+.port-img4 {
+	background-image: url(/images/THUMBNAIL_Test_hubbs14.jpg);
+}
+
+.port-info {
+	position: absolute;
+	background: rgba(128,128,128,0.8);
+	width: inherit;
+	height: inherit;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+
+.port-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 20px;
+	padding: 40px 0 0 0;
+	height: 120px;
+	text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.port-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 20px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	transition: all 1s ease-in-out 0.4s;
+}
+
+.port-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+}
+
+.port-info p a:hover {
+	color: rgba(255,242,34,0.8);
+}
+
+.port-item:hover {
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.port-item:hover .port-info {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.port-item:hover .port-info p {
+	opacity: 1;
+}
+/*.thumbnail {
+	max-width: 32%;
+	padding-left: 25px
+}
+
+img:hover{
+	opacity: 0.8;
+}*/
+
+article.resume{
+	display:none;
+	max-width: 100%;
+}
+
+.abcnav{
+	max-width: 100%;
+	padding-top: 20px;
+}
+.abcnav li {
+	display: inline-block;
+	background: white;
+	width: 7%;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size: 2.5em;
+	color: gray;
+	cursor: pointer;
+}
+
+.illustration {
+	width: 100%;
+	height: 300px;
+	display: inline-block;
+}
+
+.illustration2 {
+	display: none;
+}
+
+
+.abcnav li:hover{
+	font-size: 2.5em;
+	text-transform: uppercase;
+	color: #F2A3C4;
+}
+
+li.abcselected {
+	text-transform: uppercase;
+	color: #F2A3C4;
+}
+
+.socialnav2 {
+	display:none;
+}
+
+.illustration{
+	width: 100%;
+}
+
+.letters {
+	font-size: 15em;
+	color:#F2A3C4;
+	text-align: center;
+	display: inline-block;
+	width: 30%;
+	padding-top: 25px;
+}
+
+.socialnav2 {
+	display:none;
+}
+
+.capital {
+	text-transform: uppercase;
+}
+
+.drawing {
+	font-family: 'alphamals';
+	color: black;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.drawing:after{
+	font-family: 'alphashapes';
+	content: attr(data-content);
+	color: #F2A3C4;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 25px;
+	padding-left: 8px;
+}
+
+.mobilebutton {
+	display: none;
+}
+
+
+
+@media all and (max-width: 750px){
+/* Mobile Styles */
+
+ body{
+      max-width:800px;
+    }
+
+    .header {
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+    }
+
+    h1{
+    display: block;
+    float: none;	
+	max-width: 100%;
+	text-align: center;
+	font-size: 3.25em;
+    }
+
+	.sitenav li {
+		display: inline-block;
+		background: lightgray;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		border-bottom: none;
+	}
+
+	.sitenav li:hover {
+	background: #F2A3C4;
+}
+
+	.sitenav ul li:nth-child(2) {  
+  	background: gray;
+	}
+
+	.sitenav ul li:nth-child(4) {  
+  		background: gray;
+	}
+
+	.sitenav a{
+		display: block;
+		font-size: 1.5em;
+		color: white;
+		text-decoration: none;
+	}
+
+	.sitenav ul li:active {
+		background: #F2A3C4;
+	}
+
+	.sitenav ul a:active {
+		font-weight: 700;
+	}
+
+    .socialnav2 {
+    	width: 100%;
+    	display: block;
+    }
+
+    .socialnav2 li{
+    	display: inline-block;
+    	padding-top: 30px;
+    	padding-left: 35px;
+    	width: 15%;
+    }
+
+    .socialnav2 a{
+    	text-decoration: none;
+    	text-align: center;
+    	color: gray;
+    	font-size: 2.2em;
+    }
+
+    .socialnav {
+    	display: none;
+    }
+
+    .abcnav {
+    	display: none;
+    }
+
+    .illustration {
+    	display: none;
+    }
+
+
+    .illustration2 {
+    	display: inline-block;
+    	width: 100%;
+    	padding-bottom: 15px;
+    	border-bottom: 20px solid grey;
+    	text-align: center;
+
+    }
+
+    .letters2 {
+	font-size: 8em;
+	color:#F2A3C4;
+	display: inline-block;
+	text-align: center;
+	
+	}
+
+	.mobilebutton {
+		display: inline-block;
+		width: 30%;
+	}
+
+	.button {
+		height: 30px;
+		
+	}
+
+	.mobileword {
+		color:#F2A3C4;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+
+
+
+
+    
+
+
+
+
+
+
+
+/*Style the social nav links with Icon fonts 
+
+/*hover style for sitenav, same for when clicked
+
+/*ABC navigation with white background
+/*Transition from lowercase to uppercase letter when active
+/*Transition from grey to chosen color when active
+
+/*CSS shapes: circle, triangle, square, trapizoid, rectangle, diamond
+
+/*transition styles for each letter:
+	/* shapes change with nice fade or morphs into next shape
+	/* drawings are svg or Icon font - which will load better? does it matter?
+	/* drawings fade in
+	/* Large Upper and Lowercase letter fade in
+	/* Animal name fades in or slides in? with lines?
+
+/* Kinda like my mobile design better - May create an accordian style site with the stacked buttons/navs
+
+/*mobile styles:
+	/*will my desktop version work on an ipad? 
+
+	/* introduce arrow buttons to advance forward and back through letters
+
+	/*letters shift to the right
+	/*drawings shift to the left
+
+

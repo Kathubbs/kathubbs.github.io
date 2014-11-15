@@ -1,0 +1,77 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M380.451 808.091h297.447l92.683-242.485-241.407-251.106-239.252 251.106z"
+				],
+				"grid": 24,
+				"tags": [
+					"A_test1"
+				]
+			},
+			"properties": {
+				"order": 1,
+				"id": 4,
+				"prevSize": 32,
+				"code": 65,
+				"name": "A_test1",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"M716.837 355.817h-354.606l-183.774 354.606h737.249z"
+				],
+				"grid": 24,
+				"tags": [
+					"B_test1"
+				]
+			},
+			"properties": {
+				"order": 2,
+				"id": 3,
+				"prevSize": 32,
+				"code": 66,
+				"name": "B_test1",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 1
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "shapebet2"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "shapebet2",
+				"majorVersion": 1,
+				"minorVersion": 0
+			},
+			"metrics": {
+				"emSize": 512,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 65,
+			"showMetrics": true
+		},
+		"imagePref": {},
+		"historySize": 100,
+		"showCodes": true,
+		"search": "",
+		"gridSize": 16,
+		"showGrid": true,
+		"showLiga": false
+	}
+}
