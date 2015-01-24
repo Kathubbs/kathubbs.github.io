@@ -40,7 +40,13 @@ $('img.button').on('click', function(){
 	} else {	
 		$(letters[currentIndex + inc]).click();
 	}
-})
+});
+
+$('.portdisplay li').on('click', function(){
+	$('.portdisplay li').removeClass('portactive')
+	$(this).addClass('portactive')
+});
+
 
 //on click function for ABC nav
 	//get letter in the a href
