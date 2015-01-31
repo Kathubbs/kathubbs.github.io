@@ -123,7 +123,7 @@ article.portfolio {
 
 .portdisplay {
 	margin: auto;
-	padding: 10px;
+	padding: 20px;
 }
 
 .port-grid {
@@ -260,21 +260,11 @@ div.portexp{
 
 .portactive .portexp {
 	display: block;
-	width: 100%;
-}
-
-.port-grid li > a,
-.port-grid li > a img {
-    border: none;
-    outline: none;
-    display: block;
-    position: relative;
 }
 
 .portexp-inner {
     padding: 50px 30px;
     height: 350px;
-    width: 100%;
 }
 
 .portexp-inner:after,
@@ -299,9 +289,8 @@ div.portexp{
 
 }
 .portexp-details{
-	float: right;
 	text-align: center;
-	padding: 30px;
+	padding: 20px;
 }
 
 .portexp-inner h3 {
@@ -310,13 +299,13 @@ div.portexp{
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 22px;
-	padding-top: 30px;
+	padding-top: 40px;
 }
 
 .portexp-inner p {
 	color: white;
 	letter-spacing: 2px;
-	padding-top: 30px;
+	padding-top: 40px;
 }
 .arrow-up {
 	width: 0; 
