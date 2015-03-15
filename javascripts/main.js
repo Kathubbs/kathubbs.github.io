@@ -37,7 +37,7 @@ $('img.button').on('click', function(){
 		letters.last().click()
 	}else if($(this).hasClass('right') && currentIndex == (letters.length - 1)){
 		letters.first().click();
-	} else {	
+	} else {
 		$(letters[currentIndex + inc]).click();
 	}
 })
@@ -55,7 +55,3 @@ $('img.button').on('click', function(){
 	//left arrow for letter A moves to letter Z
 
 //Maybe I should reconsier the nav design to be consistent between mobile and desktop?
-
-
-
-	
