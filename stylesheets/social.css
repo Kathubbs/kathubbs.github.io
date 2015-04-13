@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'SSSocialCircle';
+  src: url('/fonts/ss-social-circle.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Social {
+
+}
+
+.Social-link {
+  color: grey;
+  font-family: 'SSSocialCircle';
+  font-size: 2.5rem;
+  text-decoration: none;
+}

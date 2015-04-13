@@ -3,43 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>Kat Hubbs</title>
+
         <!-- Remote CSS -->
-        <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css' rel='stylesheet' type='test/css'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 
         <!-- Local CSS -->
-        <link href="/stylesheets/site.css" rel="stylesheet" type='text/css'>
-
+        <link href='/stylesheets/site.css' rel='stylesheet' type='text/css'>
+        <link href='/stylesheets/social.css' rel='stylesheet' type='text/css'>
+        <link href='/stylesheets/navbar.css' rel='stylesheet' type='text/css'>
         <!-- Remote Javascript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <h1>Kat Hubbs</h1>
-            <!-- Header Social -->
-            <nav>
-                <ul>
-                    <li><a href='#'>&#xF612;</a></li>
-                    <li><a href='#'>&#xF661;</a></li>
-                    <li><a href='https://www.etsy.com/shop/DistrictMade'>&#xF682;</a></li>
-                    <li><a href='http://www.pinterest.com/kathubbs/'>&#xF650;</a></li>
-                    <li><a href='#'>&#xF611;</a></li>
-                </ul>
-            </nav>
+    <body class="Site">
+        <header class='Site-header'>
+            <h1 class='Site-header-title'>Kat Hubbs</h1>
+            <article class='Site-header-social'>
+                <nav class='Social'>
+                    <a class='Social-link' href='https://www.linkedin.com/pub/kat-hubbs/32/829/791'>&#xF612;</a>
+                    <a class='Social-link' href='https://www.behance.net/kathubbs'>&#xF661;</a>
+                    <a class='Social-link' href='https://www.etsy.com/shop/DistrictMade'>&#xF682;</a>
+                    <a class='Social-link' href='http://www.pinterest.com/kathubbs/'>&#xF650;</a>
+                </nav>
+            </article>
         </header>
         <!-- Page Nav -->
-        <div>
-            <nav>
-                <ul>
-                    <li>ANIMAL ABCs</li>
-                    <li>PORTFOLIO</li>
-                    <li>ABOUT</li>
-                </ul>
+        <article class='Site-navbar'>
+            <nav class='Navbar'>
+                <a href='#' class='Navbar-item'>ANIMAL ABCs</a>
+                <a href='#' class='Navbar-item'>PORTFOLIO</a>
+                <a href='#' class='Navbar-item'>ABOUT</a>
             </nav>
-        </div>
+        </article>
         <!-- Content -->
-        <section>
+        <section class='Site-content'>
             <!-- Animal ABCs -->
             <article>
                 <!-- ABC Upper Nav -->
@@ -112,17 +109,16 @@
 
             </article>
         </section>
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href='#'>&#xF612;</a></li>
-                    <li><a href='#'>&#xF661;</a></li>
-                    <li><a href='#'>&#xF682;</a></li>
-                    <li><a href='#'>&#xF650;</a></li>
-                    <li><a href='#'>&#xF611;</a></li>
-                </ul>
-            </nav>
+        <footer class='Site-footer'>
+          <article class='Site-footer-social'>
+                <nav class='Social'>
+                    <a class='Social-link' href='https://www.linkedin.com/pub/kat-hubbs/32/829/791'>&#xF612;</a>
+                    <a class='Social-link' href='https://www.behance.net/kathubbs'>&#xF661;</a>
+                    <a class='Social-link' href='https://www.etsy.com/shop/DistrictMade'>&#xF682;</a>
+                    <a class='Social-link' href='http://www.pinterest.com/kathubbs/'>&#xF650;</a>
+                </nav>
+            </article>
         </footer>
-        <script src="/javascripts/site.js"></script>
     </body>
+    <script src="/javascripts/site.js"></script>
 </html>

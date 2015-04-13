@@ -1,0 +1,11 @@
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Navbar-item {
+  display: block;
+  text-decoration: none;
+  color: grey;
+}
