@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .Site-header {
@@ -23,6 +24,11 @@
 
 .Site-header-social {
   display: none;
+}
+
+.Site-navbar {
+  width: 100%;
+
 }
 
 .Site-content {

@@ -5,7 +5,18 @@
 }
 
 .Navbar-item {
-  display: block;
+  width: 100%;
   text-decoration: none;
-  color: grey;
+  color: white;
+  background: gray;
+  text-align: center;
+}
+
+.Navbar-item--even {
+  background: lightgray;
+}
+
+.Navbar-item--selected {
+  font-weight: 700;
+  background: #F2A3C4;
 }
