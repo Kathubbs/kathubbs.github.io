@@ -1,0 +1,55 @@
+.About {
+
+}
+
+.About-block {
+  margin: .5rem;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+}
+
+.About-block--standout {
+  background-color: lightgrey;
+}
+
+.About-heading {
+  color: #F2A3C4;
+  font-weight: normal;
+  font-size: 2em;
+  text-align: center;
+}
+
+.About-heading--standout {
+  color: #808080;
+}
+
+.About-heading--small {
+  font-size: 1.75rem;
+  margin-bottom: 0;
+}
+
+.About-content {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.About-content--standout {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.About-detailgroup {
+  margin-bottom: 2.5rem;
+}
+
+.About-detail {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.About-link {
+  color: inherited;
+  text-decoration: none;
+}

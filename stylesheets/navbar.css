@@ -8,15 +8,13 @@
   width: 100%;
   text-decoration: none;
   color: white;
-  background: gray;
-  text-align: center;
-}
-
-.Navbar-item--even {
   background: lightgray;
+  text-align: center;
+  padding: 7px 0;
+  border-bottom: 1px solid white;
 }
 
-.Navbar-item--selected {
+.Navbar-item.is-selected {
   font-weight: 700;
-  background: #F2A3C4;
+  background-color: #F2A3C4;
 }
